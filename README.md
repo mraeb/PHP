@@ -2,3 +2,5 @@
 
 ----
 
+- [x] Using Echo function
+- [x] Declaring variables
