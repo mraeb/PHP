@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <?php
+            var_dump(5);
+            var_dump("mraeb");
+            var_dump('aahacreators');
+            var_dump(3.14);
+            var_dump(true);
+            var_dump([2,3,56]);
+            var_dump(NULL);
+        ?>
+    </body>
+</html>
