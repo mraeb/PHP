@@ -43,7 +43,7 @@
                 <td><?php print '<p>'.($_SESSION['mobile']).'</p>' ?></td>
             </tr>
             <tr>
-                <td><label>Email: </label></td>
+                <td><label>Email:  </label></td>
                 <td><?php print '<p>'.($_SESSION['email']).'</p>' ?></td>
         </table>
         <button id="edit" type='submit' name='edit'>Edit</button>
