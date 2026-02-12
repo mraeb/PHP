@@ -1,6 +1,6 @@
 <?php
     session_start();
-    
+
     // echo "Name: " . ($_SESSION['name']) . "<br>";
     // echo "Age: " . ($_SESSION['age']) . "<br>";
     // echo "Gender: " . ($_SESSION['gender']) . "<br>";
@@ -21,27 +21,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <form method="post">
         <table>
             <tr>
-                <td><lable>Name: </label></td>
-                <td><?php print '<p>'.($_SESSION['name']).'</p>' ?></td>
+                <td><label>Name: </label></td>
+                <td><?php print '<p>'.($_SESSION['uname']).'</p>' ?></td>
             </tr>
             <tr>
-                <td><lable>Age: </label></td>
+                <td><label>Age: </label></td>
                 <td><?php print '<p>'.($_SESSION['age']).'</p>' ?></td>
             </tr>
             <tr>
-                <td><lable>Gender: </label></td>
+                <td><label>Gender: </label></td>
                 <td><?php print '<p>'.($_SESSION['gender']).'</p>' ?></td>
             </tr>
             <tr>
-                <td><lable>Mobile: </label></td>
+                <td><label>Mobile: </label></td>
                 <td><?php print '<p>'.($_SESSION['mobile']).'</p>' ?></td>
             </tr>
+            <tr>
+                <td><label>Email: </label></td>
+                <td><?php print '<p>'.($_SESSION['email']).'</p>' ?></td>
         </table>
         <button id="edit" type='submit' name='edit'>Edit</button>
         <button id="delete" type='submit' name='delete'>Delete</button>

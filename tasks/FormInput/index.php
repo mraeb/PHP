@@ -1,20 +1,23 @@
 <?php
     session_start();
-    $name = isset($_SESSION['name']) ? $_SESSION['name'] : '';
+    $uname = isset($_SESSION['uname']) ? $_SESSION['uname'] : '';
     $age = isset($_SESSION['age']) ? $_SESSION['age'] : '';
     $gender = isset($_SESSION['gender']) ? $_SESSION['gender'] : '';
     $mobile = isset($_SESSION['mobile']) ? $_SESSION['mobile'] : '';
+    $email = isset($_SESSION['email']) ? $_SESSION['email'] : '';
 ?>
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Form Input Post</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <form method="post" action="http://localhost/mraeb/php/tasks/FormInput/process.php">
+        <form method="post" id="form" action="http://localhost/mraeb/php/tasks/FormInput/process.php">
             <table>
                 <tr>
-                    <td><label for="name">Name: </label></td>
-                    <td><input id="name" type="text" name="name" value="<?php echo htmlspecialchars($name); ?>" required></td>
+                    <td><label for="uname">Name: </label></td>
+                    <td><input id="uname" type="text" name="uname" value="<?php echo htmlspecialchars($uname); ?>" placeholder="Enter Your Name..." required></td>
                 </tr>
                 <tr>
                     <td><label for="age">Age: </label></td>
@@ -34,17 +37,17 @@
                 </tr>
                 <tr>
                     <td><label for="email">Email ID: </label></td>
-                    <td><input type="email" id="email" name="email" value = "<?php echo htmlspecialchars($email); ?>"></td>
+                    <td><input type="email" id="email" name="email" value = "<?php echo htmlspecialchars($email); ?>" required></td>
                 </tr>
-                <tr>
-                    <td><input type="submit" name="Submit" value = "submit" onclick="showSuccess()"></td>
-                </tr>
+                
+                
             </table>
+            <input type="submit" name="Submit" value = "Submit">
         </form>
         <div>
             <p id="successmessage" style="display: none;">Form submitted successfully!</p>
         </div>
-        <script>
+        <!-- <script>
             function showSuccess() {
                 // Handle form submission
                 // event.preventDefault(); // Prevent the default form submission
@@ -52,6 +55,7 @@
                 alert("Form submitted successfully!"); // Show a success message
                 // submit();
             }
-        </script>
+        </script> -->
+        <script src="script.js"> </script>
     </body>
 </html>
