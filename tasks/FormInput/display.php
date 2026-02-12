@@ -47,7 +47,7 @@
                 <td><?php print '<p>'.($_SESSION['email']).'</p>' ?></td>
         </table>
         <button id="edit" type='submit' name='edit'>Edit</button>
-        <button id="delete" type='submit' name='delete'>Delete</button>
+        <button id="delete" type='submit' name='delete'> Delete </button>
         </form>
     </body>
 </html>
