@@ -30,7 +30,11 @@
                     </td>
                 <tr>
                     <td><label for="mobile">Mobile No: </label></td>
-                    <td><input type="number" id="mobile" name="mobile" value ="<?php echo htmlspecialchars($mobile); ?>" required></td>
+                    <td><input type="tel" id="mobile" name="mobile" value ="<?php echo htmlspecialchars($mobile); ?>" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID: </label></td>
+                    <td><input type="email" id="email" name="email" value = "<?php echo htmlspecialchars($email); ?>"></td>
                 </tr>
                 <tr>
                     <td><input type="submit" name="Submit" value = "submit" onclick="showSuccess()"></td>

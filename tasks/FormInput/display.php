@@ -1,9 +1,11 @@
 <?php
     session_start();
+    
     // echo "Name: " . ($_SESSION['name']) . "<br>";
     // echo "Age: " . ($_SESSION['age']) . "<br>";
     // echo "Gender: " . ($_SESSION['gender']) . "<br>";
     // echo "Mobile: " . ($_SESSION['mobile']) . "<br>";
+
     if (isset($_POST['delete'])) {
         session_unset();
         // session_destroy();
