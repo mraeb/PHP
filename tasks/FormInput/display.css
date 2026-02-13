@@ -24,8 +24,6 @@ a {
 a.add-btn{
     background: #E97F4A;
     float: right;
-    /* float: left; */
-    /* display: block; */
 }
 a.add-btn:hover {
     background: #FF6D1F;
