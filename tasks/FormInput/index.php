@@ -9,7 +9,7 @@
     </head>
     <body>
         <h2>Enter Details</h2>        
-        <form method="post" id="form" action="http://localhost/mraeb/php/tasks/FormInput/process.php">
+        <form method="post" id="form" action="http://localhost/mraeb/php/tasks/FormInput/process.php" autocomplete="off">
             <table>
                 <tr>
                     <td><label for="uname">Name: </label></td>

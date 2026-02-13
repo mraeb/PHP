@@ -11,9 +11,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-a {
+a.add-btn, a.edit-btn, a.delete-btn {
     display: inline-block;
-    background: #E97F4A;
+    /* background: #E97F4A; */
     color: #fff;
     padding: 8px 15px;
     text-decoration: none;
@@ -68,10 +68,110 @@ a.action-btn {
     background: #16C47F;
 }
 
-a.delete-btn {
+/* a.delete-btn {
     background: #BF4646;
-}
+} */
 
 .delete-btn:hover {
     background: #DC0E0E;
 }
+.delete-btn{
+    border: none;
+    color: #F5F2F2;
+    padding: 6px 12px;
+    background: #BF4646;
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/* CSS for confirmation pop up */
+body.confirmation-active .content{
+        pointer-events: none; /* Prevent clicks on background */
+        user-select: none;    /* Prevent text selection */
+        opacity: 0.5;         /* Optional visual dimming */
+    }
+
+#popup-confirm {
+    width: 350px;
+    height: 150px;
+    background-color: #BFC6C4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 999;
+    display: none;
+}
+
+#confirm{
+    color: #DC0E0E;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.confirm-btn{
+    border: none;
+    color: #F5F2F2;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 15px 15%;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.5s ease;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.no{
+    background-color: #458B73;
+}
+.no:hover{
+    background-color: #F5F2F2;
+    color: #16C47F;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    /* display: inline-block; */
+    margin: 10px 10%;
+}
+
+.yes{
+    background-color: #BF4646;
+}
+.yes:hover{
+    background-color: #F5F2F2;
+    color: #DC0E0E;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+/* button[type=submit] {
+    background-color: #607B8F;
+    border: none;
+    color: #F5F2F2;
+    padding: 14px 28px;
+    text-decoration: none;
+    margin: 15px auto;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+button[type=submit]:hover {
+    background-color: #001F3D;
+} */

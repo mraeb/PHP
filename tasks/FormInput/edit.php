@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </head>
     <body>
         <h2>Edit Person Details</h2>
-        <form method="POST">
+        <form method="POST" autocomplete="off">
             <table>
                 <tr>
                     <td><label for="uname">Name:</label></td>
