@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <h2>Enter Details</h2>        
         <form method="post" id="form" action="http://localhost/mraeb/php/tasks/FormInput/process.php">
             <table>
                 <tr>
@@ -47,6 +48,7 @@
         <div>
             <p id="successmessage" style="display: none;">Form submitted successfully!</p>
         </div>
+
         <!-- <script>
             function showSuccess() {
                 // Handle form submission
@@ -56,6 +58,7 @@
                 // submit();
             }
         </script> -->
+        
         <script src="script.js"> </script>
     </body>
 </html>
