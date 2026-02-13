@@ -27,8 +27,8 @@ $result = $conn->query("SELECT * FROM persons");
             <td><?php echo $row['mobile']; ?></td>
             <td><?php echo $row['email']; ?></td>
             <td>
-                <a href="edit.php?id=<?php echo $row['id']; ?>"  class='edit-btn'>Edit</a> |
-                <a href="delete.php?id=<?php echo $row['id']; ?>"  class='delete-btn'>Delete</a>
+                <a href="edit.php?id=<?php echo $row['id']; ?>" class="action-btn edit-btn" class=''>Edit</a> |
+                <a href="delete.php?id=<?php echo $row['id']; ?>" class="action-btn delete-btn" class=''>Delete</a>
             </td>
         </tr>
         <?php } ?>

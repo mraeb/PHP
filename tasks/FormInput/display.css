@@ -1,19 +1,19 @@
-body {
+ body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    background: #E2E8CE;
     margin: 0;
     padding: 20px;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #562F00;
     margin-bottom: 20px;
 }
 
 a {
     display: inline-block;
-    background: #28a745;
+    background: #E97F4A;
     color: #fff;
     padding: 8px 15px;
     text-decoration: none;
@@ -21,54 +21,59 @@ a {
     margin-bottom: 15px;
     transition: background 0.3s ease;
 }
-
+a.add-btn{
+    background: #E97F4A;
+    float: right;
+    /* float: left; */
+    /* display: block; */
+}
 a.add-btn:hover {
-    background: #218838;
+    background: #FF6D1F;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #fff;
+    background: #FFF4EA;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 table th, table td {
     padding: 12px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #B7BDF7;
 }
 
 table th {
-    background: #007bff;
-    color: #fff;
+    background: #222222;
+    color: #FFF4EA;
 }
 
 table tr:hover {
-    background: #f1f1f1;
+    background: #FCF6D9;
 }
 
-.action-btn {
+a.action-btn {
     padding: 6px 12px;
     margin: 0 5px;
+    /* background: #458B73; */
     border-radius: 4px;
-    text-decoration: none;
-    color: #fff;
+    color: #FFF4EA;
     font-size: 14px;
 }
 
 .edit-btn {
-    background: #ffc107;
+    background: #458B73;
 }
 
 .edit-btn:hover {
-    background: #e0a800;
+    background: #16C47F;
 }
 
-.delete-btn {
-    background: #dc3545;
+a.delete-btn {
+    background: #BF4646;
 }
 
 .delete-btn:hover {
-    background: #c82333;
+    background: #DC0E0E;
 }
