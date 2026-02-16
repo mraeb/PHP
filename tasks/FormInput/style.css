@@ -4,7 +4,9 @@
     margin: 0;
     padding: 20px;
 }
-
+.duplicate{
+    text-align: center;
+}
 h2 {
     text-align: center;
     color: #562F00;
@@ -18,6 +20,10 @@ form {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.error { 
+    color: red; font-size: 0.9em; 
 }
 
 table {
@@ -79,4 +85,25 @@ button[type=submit] {
 
 button[type=submit]:hover {
     background-color: #001F3D;
+}
+
+
+#department { 
+    width: 250px; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #f9f9f9; 
+    font-size: 14px; transition: 
+    border-color 0.3s, box-shadow 0.3s; 
+} 
+/* Hover effect */ 
+#department:hover { 
+    border-color: #007bff; 
+} 
+/* Focus effect */ 
+#department:focus { 
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none; 
 }
