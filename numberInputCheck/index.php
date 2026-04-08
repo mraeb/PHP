@@ -12,19 +12,32 @@
         <input type="submit" value="Submit">
     </form>
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-        $number = $_POST['number'];
-        if (is_numeric($number) && $number%2==0) {
-            echo "<p>The input is a even number: $number</p>";
-        } else {
-            echo "<p>The input is a odd number.</p>";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+            $number = $_POST['number'];
+
+            if (!is_numeric($number)) {
+                echo "<p>Please enter a valid number.</p>";
+            } else {
+
+                echo "<p>Number: $number</p>";
+
+                // Even or Odd
+                if ($number % 2 == 0) {
+                    echo "<p>Type: Even</p>";
+                } else {
+                    echo "<p>Type: Odd</p>";
+                }
+
+                // Positive / Negative / Zero
+                if ($number > 0) {
+                    echo "<p>Nature: Positive</p>";
+                } elseif ($number < 0) {
+                    echo "<p>Nature: Negative</p>";
+                } else {
+                    echo "<p>Nature: Zero</p>";
+                }
+            }
         }
-        if($number<0) {
-            echo "<p>The input is a negative number.</p>";
-        } else {
-            echo "<p>The input is a positive number.</p>";
-        }
-    }
     ?>
 </body>
 </html>
