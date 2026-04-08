@@ -19,6 +19,11 @@
         } else {
             echo "<p>The input is a odd number.</p>";
         }
+        if($number<0) {
+            echo "<p>The input is a negative number.</p>";
+        } else {
+            echo "<p>The input is a positive number.</p>";
+        }
     }
     ?>
 </body>
